@@ -1,58 +1,124 @@
- /* Remove default spacing */
-body {
-  margin: 0;
- padding-top: 80px; /* space for navbar */
+ /* Make header a flex container */
+header {
+    display: flex;          /* horizontal layout */
+    align-items: center;    /* vertically center items */
+    justify-content: flex-start; /* align to left */
+    padding: 0;             /* remove default padding */
+    margin: 0;              /* remove default margin */
+    background-color: lightseagreen; /* optional for visibility */
 }
 
-/* Navbar container */
-.navbar {
-  display: flex;
-  justify-content: space-between; /* logo left, tabs right */
-  align-items: center;
-  padding: 15px 40px;
+/* Profile picture */
 
-  background: #111;
-  color: white;
 
-  /* Keeps it at the top */
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
+/* Nav links */
+.top-nav a {color: white;text-decoration: none;margin-right: 20px;}
+
+.top-nav a:hover {text-decoration: underline;}
+
+body {font-family: Arial, sans-serif;margin: 0;padding: 0;text-align: center;}
+
+header nav {background-color: lightseagreen;padding: 10px;display: flex;justify-content: flex-start;}
+
+header nav a {color: white;text-decoration: none;margin: 0 15px;}
+
+header nav a:hover {text-decoration: underline;
+
+    /* Indent content on every page */
+
+    main {padding-left: 50px; /* space from left edge */
+        padding-right: 50px; /* optional, space from right edge */}
+
+    .navbar {
+        height: 60px; /* height of tab bar */
+        background-color: #003366;
+        display: flex;
+        align-items: center; /* vertically centers items */
+        justify-content: space-between;
+        padding: 0 15px;} }
+
+ .profile-pic {width: 20px;height: 20px;border-radius: 50%;
+     position: absolute;top: 10px;right: 10px;object-fit: cover;}
+
+
+.home {background-color: lightskyblue;}
+
+.about {background-color: lightskyblue;}
+
+.projects {background-color: lightskyblue;}
+
+.contact {background-color: lightskyblue;}
+
+footer {margin-top: 30px;font-size: 0.9em;color: blueviolet;}
+.cv-button {
+    background-color: #003366;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-/* Logo */
-.logo {
-  font-size: 22px;
+.cv-button:hover {
+    background-color: #0055aa;
+}
+.projects-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
 }
 
-/* Horizontal list */
-.nav-links {
-  list-style: none;
-  display: flex;   /* THIS makes it horizontal */
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+.project-card{
+    width:260px;
+    border:1px solid #ddd;
+    padding:15px;
+    border-radius:8px;
+    background:white;
 }
 
-/* Links (tabs) */
-.nav-links li a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 6px;
-  transition: 0.3s;
+.project-image{
+    width:100%;
+    border-radius:6px;
 }
 
-/* Hover effect */
-.nav-links li a:hover {
-  background: #00d4ff;
-  color: black;
+.project-card h2 a{
+    text-decoration:none;
+    color:#003366;
 }
 
-/* Active tab */
-.nav-links li a.active {
-  background: #00d4ff;
-  color: black;
- 
+.project-card h2 a:hover{
+    text-decoration:underline;
 }
+
+.project-link{
+    display:inline-block;
+    margin-top:10px;
+    color:#0066cc;
+}
+.contact-text {
+    text-align: justify;   /* makes text justified */
+    margin-left: 40px;     /* left indent */
+    margin-right: 40px;    /* keeps text balanced */
+    line-height: 1.6;      /* improves readability */
+}
+   /* body {
+    background-image: url("/app/static/images/profile.jpg"); */   /* path to your image */
+   /* background-size: cover;       /* make it cover the whole page */
+ /*   background-position: center;  /* center the image */
+ /*   background-repeat: no-repeat; /* don't repeat the image */
+  /*  background-attachment: fixed; /* keeps it fixed while scrolling */
+ /* }
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* black overlay, 40% opacity */
+ /*    z-index: -1; /* behind content */
+ /* } */
