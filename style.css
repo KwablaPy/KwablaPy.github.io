@@ -73,8 +73,8 @@ footer {margin-top: 30px;font-size: 0.9em;color: blueviolet;}
     line-height: 1.6;      /* improves readability */
 }
    .home-image {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
