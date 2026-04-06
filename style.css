@@ -1,43 +1,58 @@
- /* Navigation layout */
-nav {
+ /* Remove default spacing */
+body {
+  margin: 0;
+ padding-top: 80px; /* space for navbar */
+}
+
+/* Navbar container */
+.navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* logo left, tabs right */
   align-items: center;
+  padding: 15px 40px;
+
+  background: #111;
+  color: white;
+
+  /* Keeps it at the top */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Logo */
 .logo {
-  color: white;
   font-size: 22px;
 }
 
-/* Tabs container */
-.nav-tabs {
+/* Horizontal list */
+.nav-links {
   list-style: none;
-  display: flex;
-  gap: 12px;
+  display: flex;   /* THIS makes it horizontal */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Individual tabs */
-.tab {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 25px; /* pill shape */
+/* Links (tabs) */
+.nav-links li a {
   text-decoration: none;
   color: white;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 /* Hover effect */
-.tab:hover {
+.nav-links li a:hover {
   background: #00d4ff;
   color: black;
 }
 
 /* Active tab */
-.tab.active {
+.nav-links li a.active {
   background: #00d4ff;
   color: black;
-  font-weight: bold;
+ 
 }
