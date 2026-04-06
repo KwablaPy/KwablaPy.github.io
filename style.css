@@ -103,22 +103,12 @@ footer {margin-top: 30px;font-size: 0.9em;color: blueviolet;}
     margin-right: 40px;    /* keeps text balanced */
     line-height: 1.6;      /* improves readability */
 }
-   /* body {
-    background-image: url("/app/static/images/profile.jpg"); */   /* path to your image */
-   /* background-size: cover;       /* make it cover the whole page */
- /*   background-position: center;  /* center the image */
- /*   background-repeat: no-repeat; /* don't repeat the image */
-  /*  background-attachment: fixed; /* keeps it fixed while scrolling */
- /* }
-
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* black overlay, 40% opacity */
- /*    z-index: -1; /* behind content */
- /* } */
+   .home-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #00d4ff;
+}
